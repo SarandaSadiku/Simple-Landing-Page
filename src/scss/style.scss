@@ -1,13 +1,22 @@
 $body-text: #333;
 $body-font-family: 'Montserrat', sans-serif;;
 $white-text: #fff;
+$active-link-color: #3399cc;
 
 body{
     color: $body-text;
     font-family: $body-font-family;
+    font-weight: 400;
     overflow-x: hidden;
     position: relative;
     font-size: 16px;
+    // max-width: 1923px;
+}
+a:focus{
+    color: $active-link-color;
+}
+h1{
+    font-size: 48px;
 }
 /*=========================
         HEADER
@@ -17,13 +26,32 @@ body{
     background-size: cover;
     height: 927px;
     color: $white-text;
+    .buy-now{
+        button{
+            padding: 40px 68px;
+            background-color: inherit;
+            border: 2px solid #fff;
+            color: $white-text;
+            font-size: 29px;
+        }
+    }
     a{
         color: $white-text;
         font-size: 24px;
+        &:focus{
+            color: $active-link-color;
+        }
+
     }
     .navbar-brand{
         font-size: 70px;
         font-weight: 500;
+    }
+    .title{
+        margin-top: 165px;
+        margin-bottom: 50px;
+        font-weight: 300;
+        line-height: 90px;
     }
 
 }

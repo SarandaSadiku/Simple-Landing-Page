@@ -1,9 +1,16 @@
 body {
   color: #333;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
   position: relative;
   font-size: 16px; }
+
+a:focus {
+  color: #3399cc; }
+
+h1 {
+  font-size: 48px; }
 
 /*=========================
         HEADER
@@ -13,9 +20,22 @@ body {
   background-size: cover;
   height: 927px;
   color: #fff; }
+  #home .buy-now button {
+    padding: 40px 68px;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 29px; }
   #home a {
     color: #fff;
     font-size: 24px; }
+    #home a:focus {
+      color: #3399cc; }
   #home .navbar-brand {
     font-size: 70px;
     font-weight: 500; }
+  #home .title {
+    margin-top: 165px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 90px; }
