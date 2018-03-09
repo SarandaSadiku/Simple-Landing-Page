@@ -1,0 +1,21 @@
+body {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 16px; }
+
+/*=========================
+        HEADER
+==========================*/
+#home {
+  background: url("../img/header-bg.png") no-repeat fixed center;
+  background-size: cover;
+  height: 927px;
+  color: #fff; }
+  #home a {
+    color: #fff;
+    font-size: 24px; }
+  #home .navbar-brand {
+    font-size: 70px;
+    font-weight: 500; }
