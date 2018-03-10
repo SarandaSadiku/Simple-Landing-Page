@@ -1,7 +1,12 @@
 $body-text: #333;
 $body-font-family: 'Montserrat', sans-serif;;
 $white-text: #fff;
+$grey-color: #cccccc;
+$grey-text: #999999;
 $active-link-color: #3399cc;
+$circle-color: #3399cc;
+$white-color-bg: #fff;
+
 
 body{
     color: $body-text;
@@ -18,13 +23,16 @@ a:focus{
 h1{
     font-size: 48px;
 }
+h3{
+    font-size: 36px;
+}
 /*=========================
         HEADER
 ==========================*/
 #home{
     background: url('../img/header-bg.png') no-repeat fixed center;
     background-size: cover;
-    height: 927px;
+    min-height: 927px;
     color: $white-text;
     .buy-now{
         button{
@@ -54,4 +62,38 @@ h1{
         line-height: 90px;
     }
 
+}
+/*=========================
+        BANNER
+==========================*/
+#banner{
+    background-color: $white-color-bg;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -100px;
+    padding: 0 100px 0 40px;
+    box-shadow: 0px 8px 11px 0px $grey-color;
+    h3{
+        font-weight: 300;
+    }
+    h1{
+        font-weight: 300;
+        margin-top: 33px;
+        color: $grey-text;
+    }
+    .circle{
+        width: 207px;
+        height: 207px;
+        background-color: $circle-color;
+        border-radius: 50%;
+        color: $white-text;
+        font-weight: 800;
+        font-size: 46px;
+        right:-85px;
+        top: 25px;
+
+    }
 }

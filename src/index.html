@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,800" rel="stylesheet">
 </head>
 <body>
-    <header id="home">
+    <!-- START HEADER -->
+    <header id="home" class="position-relative">
         <div class="container-fluid text-center">
             <nav class="navbar navbar-expand-lg navbar-light">
               <a class="navbar-brand d-inline" href="#home">Logo</a>
@@ -46,8 +47,30 @@
                 <button type="button" name="button">BUY NOW</button>
             </div>
         </div>
-
     </header>
+    <!-- START BANNER -->
+    <section id="banner" class="position-absolute d-none d-xl-block">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-6 my-auto">
+                    <h3>Processus qui</h3>
+                    <h1>Mutationem consuet</h1>
+                </div>
+                <div class="col-4 bg-secondary">
+                    <img src="img/iphone.png" alt="">
+                </div>
+                <div class="col-2 position-relative">
+                    <!-- <img src="img/iphone.png" alt=""> -->
+                    <div class="circle d-flex align-items-center justify-content-center position-absolute">
+                        50% <br> OFF
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
