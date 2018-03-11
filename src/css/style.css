@@ -7,7 +7,7 @@ body {
   font-size: 16px; }
 
 .container {
-  max-width: 1200px; }
+  max-width: 1245px; }
 
 a:focus {
   color: #3399cc; }
@@ -35,6 +35,8 @@ h5 {
     border: 2px solid #fff;
     color: #fff;
     font-size: 29px; }
+    #home .buy-now button:hover {
+      cursor: pointer; }
   #home a {
     color: #fff;
     font-size: 24px; }
@@ -54,7 +56,7 @@ h5 {
 ==========================*/
 #banner {
   background-color: #fff;
-  max-width: 1200px;
+  max-width: 1245px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -120,7 +122,7 @@ h5 {
         SERVICES
 ==========================*/
 #services {
-  padding: 145px 0px;
+  padding-top: 145px;
   min-height: 1000px; }
   #services h3 {
     color: #999999;
@@ -128,7 +130,7 @@ h5 {
     margin-bottom: 50px; }
   #services .card {
     padding: 77px 50px 77px 50px;
-    min-width: 360px;
+    max-width: 360px;
     height: 360px;
     border: 0;
     margin-bottom: 40px; }
@@ -157,3 +159,54 @@ h5 {
       width: 70px;
       height: 70px;
       margin-bottom: 35px; }
+
+/*=========================
+        OUR PRODUCTS
+==========================*/
+#our-products {
+  background: url("../img/our-products-bg.png") no-repeat fixed center;
+  background-size: cover; }
+  #our-products .col-md-4 {
+    padding: 0;
+    margin-bottom: 20px; }
+  #our-products h3 {
+    padding: 125px 0px 110px 0px;
+    color: #999999;
+    font-weight: 300; }
+  #our-products .products-thumb {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 #cccccc, 0 6px 20px 0 #cccccc; }
+    #our-products .products-thumb img {
+      height: 100%;
+      width: 100%; }
+    #our-products .products-thumb:hover .products-overlay {
+      opacity: 1;
+      cursor: pointer; }
+    #our-products .products-thumb .products-overlay {
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      position: absolute;
+      background: rgba(51, 153, 204, 0.6);
+      padding: 20px;
+      margin-left: auto;
+      margin-right: auto; }
+      #our-products .products-thumb .products-overlay button {
+        font-size: 18px;
+        padding: 36px 48px;
+        background-color: rgba(51, 153, 204, 0.12);
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 29px;
+        font-weight: 400; }
+  #our-products .products-thumb, #our-products .products-overlay {
+    height: 390px;
+    max-width: 390px; }
