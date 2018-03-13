@@ -4,7 +4,9 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto; }
 
 .container {
   max-width: 1200px; }
@@ -153,7 +155,8 @@ h5 {
 ==========================*/
 #our-products {
   background: url("../img/our-products-bg.png") no-repeat fixed center;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 1250px; }
   #our-products .col-md-4 {
     padding: 0;
     margin-bottom: 15px; }
@@ -280,10 +283,11 @@ h5 {
         CONTACT FORM
 ==========================*/
 #contact-form {
-  background: url("../img/contact-bg.png") no-repeat fixed center center;
+  background: url("../img/contact-bg.png") no-repeat center;
   background-size: cover;
-  min-height: 877px;
-  width: 100%; }
+  min-height: 803px;
+  width: 100%;
+  box-shadow: 1px 7px 13px -1px rgba(0, 0, 0, 0.09); }
   #contact-form h3 {
     color: #999999;
     padding: 80px 0 95px 0; }
@@ -331,4 +335,16 @@ h5 {
         FOOTER
 ==========================*/
 #footer {
-  min-height: 152px; }
+  padding: 0 70px;
+  min-height: 133px; }
+  #footer a {
+    color: #999999;
+    font-weight: 500;
+    font-size: 24px; }
+    #footer a:hover, #footer a:focus {
+      color: #3399cc;
+      text-decoration: none; }
+  #footer .faq ul li {
+    margin-right: 60px; }
+  #footer .social-icons ul li {
+    margin-left: 60px; }

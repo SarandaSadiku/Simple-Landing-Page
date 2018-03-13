@@ -22,6 +22,7 @@ $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
 
+
 body{
     color: $body-text;
     font-family: $body-font-family;
@@ -29,7 +30,8 @@ body{
     overflow-x: hidden;
     position: relative;
     font-size: 16px;
-    // max-width: 1923px;
+    width: 100%;
+    margin: 0 auto;
 }
 .container{
     max-width: 1200px;
@@ -222,6 +224,7 @@ h5{
 #our-products{
     background: url('../img/our-products-bg.png') no-repeat fixed center;
     background-size: cover;
+    min-height: 1250px;
     // * :nth-child(3n+3) { margin-right: 0; }
     // .card{
     //     width: 390px !important;
@@ -399,10 +402,12 @@ h5{
         CONTACT FORM
 ==========================*/
 #contact-form{
-    background: url('../img/contact-bg.png') no-repeat fixed center center;
+    background: url('../img/contact-bg.png') no-repeat center;
     background-size: cover;
-    min-height: 877px;
+    min-height: 803px;
     width: 100%;
+    box-shadow: 1px 7px 13px -1px rgba(0,0,0,0.09);
+
 
     h3{
         color: $grey-text;
@@ -458,5 +463,31 @@ h5{
         FOOTER
 ==========================*/
 #footer{
-    min-height: 152px;
+    padding: 0 70px;
+    min-height: 133px;
+    a{
+        color: $grey-text;
+        font-weight: 500;
+        font-size: 24px;
+        &:hover, &:focus{
+            color: $blue-color;
+            text-decoration: none;
+        }
+
+    }
+    .faq{
+        ul{
+            li{
+                margin-right: 60px;
+            }
+        }
+    }
+    .social-icons{
+        ul{
+            li{
+                margin-left: 60px;
+            }
+        }
+    }
+
 }
