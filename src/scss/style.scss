@@ -61,7 +61,7 @@ h5{
 #home{
     background: url('../img/header-bg.png') no-repeat fixed center;
     background-size: cover;
-    min-height: 927px;
+    height: 927px;
     color: $white-text;
     .buy-now{
         button{
@@ -140,7 +140,7 @@ h5{
 #top-products{
     background: url('../img/products-bg.png') no-repeat fixed center;
     background-size: cover;
-    min-height: 956px;
+    height: 956px;
     .center{
         img{
 
@@ -159,20 +159,15 @@ h5{
 
              img {
                  box-shadow: 0px 15px 57px -8px rgba(0,0,0,0.75)!important;
-                 width: 415px;
-                 height: 415px;
+                 min-width: 415px;
+                 min-height: 415px;
                  object-fit: cover;
              }
          }
 
-
-         // .slick.active{
-         //     width: 100px;
-         //     height: 100px;
-
          .slick-list {
-             margin: 0 -27px;
-             padding: 60px !important;
+             height: auto!important;
+             padding: 60px!important;
 
          }
          .slick-track{
@@ -225,19 +220,14 @@ h5{
     background: url('../img/our-products-bg.png') no-repeat fixed center;
     background-size: cover;
     min-height: 1250px;
-    // * :nth-child(3n+3) { margin-right: 0; }
-    // .card{
-    //     width: 390px !important;
-    // }
+    position: relative;
 
     .col-md-4{
-        padding: 0;
-        margin-bottom: 15px;
-        // margin: 0 8px;
+        padding: 7px;
     }
 
     h3{
-        padding: 125px 0px 110px 0px;
+        padding: 113px 0px 90px 0px;
         color: $grey-text;
     }
 
@@ -259,9 +249,9 @@ h5{
         }
         .products-overlay{
             opacity: 0;
-            height: 100%;
-            width: 100%;
-            top: 0;
+            height: 97%;
+            width: 98%;
+            top: 7px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -272,6 +262,7 @@ h5{
             margin-left: auto;
             margin-right: auto;
             button{
+                margin-top: 0!important;
                 font-size: 18px;
                 padding: 36px 48px;
                 background-color: rgba(51,153,204,.12);
@@ -282,17 +273,15 @@ h5{
             }
         }
     }
-
-    .products-thumb, .products-overlay{
-        height: 390px;
-        // max-width: 390px;
-        // margin-right: 15px;
-
-    }
-
-    .see-all{
-        a{
-
+    button{
+        margin-top: 70px;
+        border: 0;
+        background: inherit;
+        font-size: 24px;
+        font-weight: 300;
+        color: $blue-color;
+        &:hover{
+            cursor: pointer;
         }
     }
 
@@ -404,7 +393,7 @@ h5{
 #contact-form{
     background: url('../img/contact-bg.png') no-repeat center;
     background-size: cover;
-    min-height: 803px;
+    height: 803px;
     width: 100%;
     box-shadow: 1px 7px 13px -1px rgba(0,0,0,0.09);
 
@@ -435,6 +424,9 @@ h5{
             color: $blue-color;
             font-size: 24px;
             font-weight: 300;
+            &:hover{
+                cursor: pointer;
+            }
         }
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
           color: $grey-text;
@@ -495,6 +487,181 @@ h5{
         }
         li{
             margin: 10px;
+        }
+    }
+}
+
+// Medium -> Small
+@media only screen and (max-device-width: 767px) and (min-device-width: 576px) {
+    #home{
+            height: 604px;
+        .navbar-brand{
+            font-size: 50px!important;
+        }
+        .title{
+            line-height: 60px;
+        }
+        .buy-now{
+            button{
+                padding: 20px 38px;
+                font-size: 16px;
+            }
+        }
+    }
+    h1{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    #services{
+        padding-top: 55px;
+        .card{
+            padding: 57px 30px 57px 30px;
+            height: 305px;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    #our-products{
+        // min-height: 1120px;
+        h3{
+            padding: 40px 0px 19px 0px;
+        }
+        button{
+            font-size: 18px;
+        }
+    }
+    #testimonials{
+        h5{
+            line-height: 36px!important;
+        }
+    }
+    #contact-form{
+        height: 612px;
+        h3{
+            padding: 54px 0 45px 0;
+        }
+        form{
+            input{
+                height: 58px;
+            }
+            button{
+                font-size: 18px;
+            }
+        }
+    }
+    #top-products{
+        height: 666px;
+        h3{
+            padding: 40px 0 0px 0;
+        }
+    }
+    #footer{
+        a{
+            font-size: 20px;
+        }
+    }
+}
+// Extra Small ->
+@media only screen and (max-device-width: 575px){
+    #home{
+        height: 493px;
+        .navbar-brand{
+            font-size: 35px!important;
+        }
+        .title{
+            line-height: 45px;
+        }
+        .buy-now{
+            button{
+                padding: 7px 17px;
+                font-size: 12px;
+            }
+        }
+    }
+    h1{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 16px!important;
+    }
+    h4{
+        font-size: 23px;
+    }
+    h5{
+        font-size: 13px;
+    }
+    #services{
+        padding-top: 55px;
+        .card{
+            padding: 57px 30px 57px 30px;
+            height: 305px;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    #our-products{
+        // min-height: 1120px;
+        h3{
+            padding: 40px 0px 19px 0px;
+        }
+        button{
+            font-size: 18px;
+        }
+    }
+    #testimonials{
+        h5{
+            line-height: 30px!important;
+        }
+    }
+    #contact-form{
+        height: 612px;
+        h3{
+            padding: 54px 0 45px 0;
+        }
+        form{
+            input{
+                height: 58px;
+            }
+            button{
+                font-size: 18px;
+            }
+        }
+    }
+    #top-products{
+        height: 666px;
+        .center {
+            .slick-center{
+                img{
+                    box-shadow: none!important;
+                }
+            }
+        }
+        h3{
+            padding: 40px 0 0px 0;
+        }
+    }
+    #footer{
+        a{
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-device-width: 1000px) and (min-device-width: 767px) {
+    #testimonials{
+        h5{
+            line-height: 35px!important;
         }
     }
 }

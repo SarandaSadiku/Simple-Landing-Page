@@ -36,7 +36,7 @@ h5 {
 #home {
   background: url("../img/header-bg.png") no-repeat fixed center;
   background-size: cover;
-  min-height: 927px;
+  height: 927px;
   color: #fff; }
   #home .buy-now button {
     padding: 40px 68px;
@@ -99,7 +99,7 @@ h5 {
 #top-products {
   background: url("../img/products-bg.png") no-repeat fixed center;
   background-size: cover;
-  min-height: 956px; }
+  height: 956px; }
   #top-products .center img {
     box-shadow: 0px 8px 11px 0px #cccccc !important;
     width: 357px;
@@ -112,11 +112,11 @@ h5 {
     margin-top: -28px !important; }
     #top-products .center .slick-center img {
       box-shadow: 0px 15px 57px -8px rgba(0, 0, 0, 0.75) !important;
-      width: 415px;
-      height: 415px;
+      min-width: 415px;
+      min-height: 415px;
       object-fit: cover; }
   #top-products .center .slick-list {
-    margin: 0 -27px;
+    height: auto !important;
     padding: 60px !important; }
   #top-products .center .slick-track {
     padding-bottom: 15px; }
@@ -156,12 +156,12 @@ h5 {
 #our-products {
   background: url("../img/our-products-bg.png") no-repeat fixed center;
   background-size: cover;
-  min-height: 1250px; }
+  min-height: 1250px;
+  position: relative; }
   #our-products .col-md-4 {
-    padding: 0;
-    margin-bottom: 15px; }
+    padding: 7px; }
   #our-products h3 {
-    padding: 125px 0px 110px 0px;
+    padding: 113px 0px 90px 0px;
     color: #999999; }
   #our-products .products-thumb {
     margin: 0;
@@ -177,9 +177,9 @@ h5 {
       cursor: pointer; }
     #our-products .products-thumb .products-overlay {
       opacity: 0;
-      height: 100%;
-      width: 100%;
-      top: 0;
+      height: 97%;
+      width: 98%;
+      top: 7px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -190,6 +190,7 @@ h5 {
       margin-left: auto;
       margin-right: auto; }
       #our-products .products-thumb .products-overlay button {
+        margin-top: 0 !important;
         font-size: 18px;
         padding: 36px 48px;
         background-color: rgba(51, 153, 204, 0.12);
@@ -197,8 +198,15 @@ h5 {
         color: #fff;
         font-size: 29px;
         font-weight: 400; }
-  #our-products .products-thumb, #our-products .products-overlay {
-    height: 390px; }
+  #our-products button {
+    margin-top: 70px;
+    border: 0;
+    background: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    color: #3399cc; }
+    #our-products button:hover {
+      cursor: pointer; }
 
 /*=========================
         TESTIMONIALS
@@ -285,7 +293,7 @@ h5 {
 #contact-form {
   background: url("../img/contact-bg.png") no-repeat center;
   background-size: cover;
-  min-height: 803px;
+  height: 803px;
   width: 100%;
   box-shadow: 1px 7px 13px -1px rgba(0, 0, 0, 0.09); }
   #contact-form h3 {
@@ -310,6 +318,8 @@ h5 {
       color: #3399cc;
       font-size: 24px;
       font-weight: 300; }
+      #contact-form form button:hover {
+        cursor: pointer; }
     #contact-form form ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: #999999;
@@ -353,3 +363,101 @@ h5 {
     text-align: center !important; }
   #footer li {
     margin: 10px; } }
+
+@media only screen and (max-device-width: 767px) and (min-device-width: 576px) {
+  #home {
+    height: 604px; }
+    #home .navbar-brand {
+      font-size: 50px !important; }
+    #home .title {
+      line-height: 60px; }
+    #home .buy-now button {
+      padding: 20px 38px;
+      font-size: 16px; }
+  h1 {
+    font-size: 32px; }
+  h3 {
+    font-size: 26px; }
+  h3 {
+    font-size: 23px; }
+  h5 {
+    font-size: 20px; }
+  #services {
+    padding-top: 55px; }
+    #services .card {
+      padding: 57px 30px 57px 30px;
+      height: 305px; }
+      #services .card p {
+        font-size: 14px; }
+  #our-products h3 {
+    padding: 40px 0px 19px 0px; }
+  #our-products button {
+    font-size: 18px; }
+  #testimonials h5 {
+    line-height: 36px !important; }
+  #contact-form {
+    height: 612px; }
+    #contact-form h3 {
+      padding: 54px 0 45px 0; }
+    #contact-form form input {
+      height: 58px; }
+    #contact-form form button {
+      font-size: 18px; }
+  #top-products {
+    height: 666px; }
+    #top-products h3 {
+      padding: 40px 0 0px 0; }
+  #footer a {
+    font-size: 20px; } }
+
+@media only screen and (max-device-width: 575px) {
+  #home {
+    height: 493px; }
+    #home .navbar-brand {
+      font-size: 35px !important; }
+    #home .title {
+      line-height: 45px; }
+    #home .buy-now button {
+      padding: 7px 17px;
+      font-size: 12px; }
+  h1 {
+    font-size: 17px; }
+  h3 {
+    font-size: 16px !important; }
+  h4 {
+    font-size: 23px; }
+  h5 {
+    font-size: 13px; }
+  #services {
+    padding-top: 55px; }
+    #services .card {
+      padding: 57px 30px 57px 30px;
+      height: 305px; }
+      #services .card p {
+        font-size: 14px; }
+  #our-products h3 {
+    padding: 40px 0px 19px 0px; }
+  #our-products button {
+    font-size: 18px; }
+  #testimonials h5 {
+    line-height: 30px !important; }
+  #contact-form {
+    height: 612px; }
+    #contact-form h3 {
+      padding: 54px 0 45px 0; }
+    #contact-form form input {
+      height: 58px; }
+    #contact-form form button {
+      font-size: 18px; }
+  #top-products {
+    height: 666px; }
+    #top-products .center .slick-center img {
+      box-shadow: none !important; }
+    #top-products h3 {
+      padding: 40px 0 0px 0; }
+  #footer a {
+    font-size: 20px; } }
+
+@media only screen and (max-device-width: 1000px) and (min-device-width: 767px) {
+  #testimonials h5 {
+    line-height: 35px !important; } }
