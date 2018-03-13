@@ -463,8 +463,13 @@ h5{
         FOOTER
 ==========================*/
 #footer{
-    padding: 0 70px;
+    // padding: 0 70px;
+
     min-height: 133px;
+    .social-icons{
+        text-align: right !important;
+    }
+
     a{
         color: $grey-text;
         font-weight: 500;
@@ -475,19 +480,21 @@ h5{
         }
 
     }
-    .faq{
-        ul{
-            li{
-                margin-right: 60px;
-            }
-        }
-    }
-    .social-icons{
-        ul{
-            li{
-                margin-left: 60px;
-            }
-        }
+    li{
+        margin: 30px;
     }
 
+
+}
+
+// MEDIA QUERIES
+@media only screen and (max-device-width: 991px) {
+    #footer{
+        .social-icons, .faq{
+            text-align: center !important;
+        }
+        li{
+            margin: 10px;
+        }
+    }
 }
